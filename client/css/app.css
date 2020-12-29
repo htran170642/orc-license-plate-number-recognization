@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Monospace", sans-serif; }
+  
+  .container {
+    width: 100%;
+    height: auto; }
+  
+  .ocr-demo-container {
+    background-color: #ccc3ea;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 680px; }
+    .ocr-demo-container .turtorial {
+      display:table;
+      padding: 10px;
+      font-size: 12;
+      width: 50%;
+      max-width: 200px;
+      min-width: 100px;
+    }
+    .ocr-demo-container .demo-wrapper {
+      display: table;
+      padding-width: 20px;
+      padding-left: 20px;
+      width: 100%;
+      box-sizing: border-box; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .ocr-demo-container .demo-wrapper {
+          padding-bottom: 0px; } }
+      @media screen and (max-width: 1024px) {
+        .ocr-demo-container .demo-wrapper {
+          padding: 0px; } }
+      .ocr-demo-container .demo-wrapper div {
+        display: table-cell;
+        width: 80%; }
+        @media screen and (max-width: 640px) {
+          .ocr-demo-container .demo-wrapper div {
+            display: table-row; } }
+      .ocr-demo-container .demo-wrapper div:nth-child(1) {
+        text-align: left; }
+        @media screen and (max-width: 640px) {
+          .ocr-demo-container .demo-wrapper div:nth-child(1) {
+            text-align: center; } }
+      .ocr-demo-container .demo-wrapper div:nth-child(2) {
+        text-align: right; }
+        @media screen and (max-width: 640px) {
+          .ocr-demo-container .demo-wrapper div:nth-child(2) {
+            text-align: center; } }
+    .ocr-demo-container h2 {
+      font-size: 25px;
+      background-color: #880d90;
+      padding: 10px;
+      margin: 0px;
+      border: 1px solid #24a8b9;
+      border-bottom: 0px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-family: Monospace; }
+    .ocr-demo-container .input-button {
+      background-color: #28195a;
+      color: white;
+      border-radius: 5px;
+      font-family: "Monospace", sans-serif;
+      font-weight: bold;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: 1px solid #28195a;
+      font-size: 12px;
+      margin: 10px 5px;
+      white-space: nowrap;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .ocr-demo-container .input-button:hover {
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.22); }
+    .ocr-demo-container .input-button:focus {
+      outline: none; }
+    .ocr-demo-container .demo-output {
+      display: flex;
+      margin-top: 10px;
+      width: 100%;
+      background-color: #ccc3ea; }
+    .ocr-demo-container .out-box {
+      display: table-cell;
+      width: 60%;
+      margin: 0px auto;
+      padding: 0px 10px 10px 10px;
+      background-color: #ccc3ea; }
+      .ocr-demo-container .out-box p {
+        color: black;
+        margin-top: 0px;
+        margin-bottom: 0px !important; }
+      .ocr-demo-container .out-box b {
+        color: #c9a61a;
+        font-size: 25px; }
+        @media screen and (max-width: 640px) {
+          .ocr-demo-container .out-box b {
+            font-size: 18px; } }
+      @media screen and (max-width: 640px) {
+        .ocr-demo-container .out-box {
+          width: 100%; } }
+    @media screen and (max-width: 640px) {
+      .ocr-demo-container select {
+        margin-top: 25px; } }
+    .ocr-demo-container .predict-button {
+      background-color: #c9a61a;
+      border: 1px solid #c9a61a;
+      padding: 5px;
+      margin-right: 20px;
+      color: black; }
+    .ocr-demo-container .predict-button:hover {
+      padding: 5px;
+      background-color: #c9a61a; }
+    .ocr-demo-container .model-button {
+      background-color: #968c8c;
+      border: 1px solid#968c8c;
+      padding: 5px;
+      margin-right: 20px;
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      color: black; 
+      height: 32px;
+      width: 64px;
+      font-size: 20px;
+    }
+    .ocr-demo-container .model-button:hover {
+      padding: 5px;
+      background-color: #968c8c; }
+    .ocr-demo-container .model-button.active {
+      padding: 5px;
+      background-color: #2fe428; }
+    .ocr-demo-container #demo-progress {
+      width: 100%;
+      background-color: #ddd; }
+    .ocr-demo-container #results-box {
+      padding: 0px 10px !important;
+      width: 100% !important; }
+    .ocr-demo-container #load-button {
+      position: relative; }
+    .ocr-demo-container #load-button span {
+      display: block;
+      width: 22px;
+      font-size: 11px;
+      border-radius: 50%;
+      padding: 3px;
+      background-color: #ebebeb;
+      color: black;
+      position: absolute;
+      top: -30px;
+      left: 35px;
+      font-weight: bold; }
+    .ocr-demo-container #progress-bar {
+      width: 1%;
+      height: 30px;
+      background-color: #4CAF50; }
+    .ocr-demo-container #predict-list {
+      margin: 0px;
+      color: black;
+      padding-bottom: 20px;
+      font-size: 11px; }
+  
+  /*# sourceMappingURL=app.css.map */
+  

@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>OCR</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+	<script type="text/javascript" src="js/utils.js"></script>
+    <!-- <script type="text/javascript" src="js/imagenet_classes.js"></script>  -->
+</head>
+<body>
+	<div class="container">
+		<div class="ocr-demo-container">
+			<h2>License Plate</h2>
+			<div class="turtorial">
+				<p><b>License Plate Number Recognition</b></p>
+				<p>1. Load image</p>
+				<p>2. Choose Model</p>
+				<p>3. Predict</p>
+			</div>
+			<div class="demo-wrapper-2" style="float: right;;">
+				<button id="cnn" class="input-button model-button active" value='cnn' onclick="chooseCNN()">CNN</button>
+				<button id="svm" class="input-button model-button" value='svm' onclick="chooseSVM()">SVM</button>
+			</div>
+			<div class="demo-wrapper">
+				<div>
+					<label for="select-file-image" class="input-button">
+						Upload Image
+					</label>
+					
+					<input type='file' id="select-file-image" onchange="loadImageLocal()" style="display: None" />
+				</div>
+				<div>
+					<button id="predict-button" class="input-button predict-button" onclick="predictImage()">Predict</button>
+				</div>
+			</div>
+			<div class="demo-output">
+				<div class="out-box" id="select-file-box" style="display: none;">
+					<img id='test-image' />
+				</div>
+				<div id="progress-box" style="display: None; width: 100% !important;">
+					<img src="assets/loading.gif" id="demo-load" width="100px" />
+					<p id="progress-box-content" style="color: white;">Predicting...</p>
+				</div>
+				<div class="out-box" id="predict-box" style="display: none;">
+					<p id="prediction"></p>
+					<!-- <input type="text" id="fname" name="fname" value="cc" style="width: fit-content"> -->
+					<br>
+					<div>
+						<button id="step" style="display: none;" class="" onclick="toggleDiv()">steps</button>
+					</div>
+					<div id="image-frame">
+						<p id="rmb" style="width:200px"></p>
+						<br>
+						<p id="roi" style="width:200px"></p>
+						<br>
+					</div>
+					<!-- <p><b style="color: #c2c2c2 !important; font-style: italic; font-weight: 100; font-size: 11px;">Top-5 Predictions</b></p> -->
+					<!-- <ul id="predict-list">
+					</ul> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
